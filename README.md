@@ -89,7 +89,7 @@ Here are visual previews of the editor in action:
  ![Image](https://github.com/user-attachments/assets/5663fab8-c865-4028-b9f3-019c311d40d4)
 
 - **Live Editing Example**  
-  ![Editing](screenshots/editor_typing.png)
+  ![Image](https://github.com/user-attachments/assets/deef1ea8-d03d-48df-99fa-a381af2f0858)
 
 - **Exit with Save Prompt**  
   ![Exit Prompt](screenshots/editor_exit.png)
