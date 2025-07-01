@@ -81,12 +81,12 @@ Its minimal dependencies and robust input handling make it ideal for constrained
    
     File_Editor.exe
 
-## 📸 Output Screenshots
+## Output Screenshots
 
 Here are visual previews of the editor in action:
 
 - **Startup View**  
-  ![Startup](screenshots/editor_start.png)
+ ![Image](https://github.com/user-attachments/assets/5663fab8-c865-4028-b9f3-019c311d40d4)
 
 - **Live Editing Example**  
   ![Editing](screenshots/editor_typing.png)
