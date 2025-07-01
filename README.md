@@ -92,4 +92,4 @@ Here are visual previews of the editor in action:
   ![Image](https://github.com/user-attachments/assets/deef1ea8-d03d-48df-99fa-a381af2f0858)
 
 - **Exit with Save Prompt**  
-  ![Exit Prompt](screenshots/editor_exit.png)
+  ![Image](https://github.com/user-attachments/assets/b517c744-2377-4c92-a20d-d5056eef87f9)
