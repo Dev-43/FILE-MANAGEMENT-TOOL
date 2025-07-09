@@ -1,95 +1,189 @@
-# FILE-MANAGEMENT-TOOL
+# 🗂️ FILE-MANAGEMENT-TOOL
 
-*COMPANY*:CODTECH IT SOLUTIONS
-
-*NAME*:DEVESH LAXMAN DOLAS
-
-*INTERN ID*:CT04DG2484
-
-*DOMAIN*:C++ Programming
-
-*DURATION*: 4 WEEKS
-
-*MENTER*:NEELA SANTOSH
-
-#  Console-Based File Editor – C++ Application
-
-This is a terminal-native text editor built in **C++** using low-level console APIs. It's designed to allow direct line-by-line editing of text files within a Windows command-line environment. Lightweight, intuitive, and modular—perfect for quick modifications, config tuning, or as a foundational tool for systems developmen
+**COMPANY**: CODTECH IT SOLUTIONS  
+**NAME**: DEVESH LAXMAN DOLAS  
+**INTERN ID**: CT04DG2484  
+**DOMAIN**: C++ Programming  
+**DURATION**: 4 WEEKS  
+**MENTOR**: NEELA SANTOSH  
 
 ---
 
-##  Features Summary
+# 📝 Console-Based File Editor – C++ Application
 
-- Interactive console-based editing experience
-- Visible in-text cursor (`|`) at the editing point
-- Arrow key navigation across lines and characters
-- Smart Backspace and Delete behaviors for accurate removal
-- `Tab` inserts four spaces for indentation
-- `Enter` creates a new line preserving content
-- `Ctrl + S` for instant saving
-- `ESC` triggers a save confirmation before exiting
-- Modular class architecture for easy extension
-- Flicker-free screen rendering with WinAPI
-- Supports all ASCII printable characters (32–126)
--  Works for any `.txt` or text-based file (UTF-8 recommended)
+A comprehensive console-native file editing and management tool written in **C++**, featuring real-time in-text editing, file search, file creation, and deletion. Designed for Windows terminals, it delivers powerful interaction through low-level APIs and efficient file handling through modular architecture.
 
 ---
 
-##  Development Environment
+## ✨ Features Summary
 
-**Programming Language**:  
-- C++17 (Standard-compliant)
-
-**Libraries & Headers**:
-- `<conio.h>` → Raw keyboard input (`_getch()`), extended key parsing
-- `<windows.h>` → Console buffer control, cursor manipulation
-- `<fstream>` → File I/O stream handling
-- `<vector>`, `<string>`, `<iostream>` → Core logic and buffer management
-
-**Recommended IDEs**:  
-- Code::Blocks  
-- Visual Studio  
-- VS Code with MinGW or MSVC
-
-**Target Platform**:  
-- Windows Terminal or CMD (PowerShell also supported)
+- ✅ Full-screen interactive text editing in terminal
+- ✅ Live visible cursor (`|`) with accurate placement
+- ✅ Arrow key navigation, tabbing, indentation
+- ✅ Smart backspace/delete operations
+- ✅ Line-by-line editing and insertion logic
+- ✅ `Ctrl + S` to save instantly
+- ✅ `ESC` to exit with save prompt
+- ✅ Smooth, flicker-free rendering using WinAPI
+- ✅ Search & create file if missing (`checkfile.h`)
+- ✅ Delete file with confirmation (`deletefile.h`)
+- ✅ Supports all printable ASCII characters (32–126)
+- ✅ Modular, extendable class-based design
 
 ---
 
-##  Applicability
+## 🛠️ Technology Stack
 
-This editor is built for environments where graphical text editors are not available or practical. It's best suited for:
+- **Language**: C++17
+- **Platform**: Windows (CMD/PowerShell)
+- **Compiler**: MinGW / MSVC / Code::Blocks / Visual Studio
 
-- Embedded firmware development
-- Terminal-based log or config editing
-- Lightweight deployment on developer systems
-- Educational demonstrations of C++ input handling and buffer logic
+### 📚 Key Libraries
 
-Its minimal dependencies and robust input handling make it ideal for constrained setups and raw file manipulation tasks.
+| Header        | Purpose                              |
+|---------------|--------------------------------------|
+| `<windows.h>` | Screen control and cursor management |
+| `<conio.h>`   | Keyboard event handling              |
+| `<fstream>`   | File read/write                      |
+| `<vector>`, `<string>`, `<iostream>` | Logic & structure |
+---
+
+## 🔍 Additional Utilities
+
+### `checkfile.h` – Search & Create File
+- Prompts user to search a file.
+- If not found, allows creating a new file with rename option.
+
+### `deletefile.h` – File Deletion Tool
+- Prompts confirmation before removing a file.
+- Uses C++ `remove()` function.
+
+These tools make the editor more than just a viewer—it becomes a full management solution.
 
 ---
 
-## 🛠️ Methodology for Usage
+## 📁 Use Cases
 
-1. **Compilation**  
-   Compile the code using your preferred C++ compiler:
+- Terminal-based config editing
+- Working in embedded or minimal environments
+- Learning and teaching C++ I/O handling
+- Developer productivity in CLI-based workflows
+- Portable file manipulation tool
 
-   ```bash
-   g++ -o file_editor main.cpp
-2.**Direct Running .exe File**  
-   Can be used Directly without any compiler by the .exe file:
-   
-    File_Editor.exe
+---
 
-## Output Screenshots
+## 🚀 How to Use
 
-Here are visual previews of the editor in action:
+### Option 1: Compile from Source
+```bash
+g++ -o file_editor main.cpp
+./file_editor
+```
 
-- **Startup View**  
- ![Image](https://github.com/user-attachments/assets/5663fab8-c865-4028-b9f3-019c311d40d4)
+### Option 2: Run Executable (No Compilation Needed)
+```
+File_Editor.exe
+```
 
-- **Live Editing Example**  
-  ![Image](https://github.com/user-attachments/assets/deef1ea8-d03d-48df-99fa-a381af2f0858)
+---
 
-- **Exit with Save Prompt**  
-  ![Image](https://github.com/user-attachments/assets/b517c744-2377-4c92-a20d-d5056eef87f9)
+## 🖼️ Output Screenshots
+
+### 🔹 Startup Interface  
+![Image](https://github.com/user-attachments/assets/5663fab8-c865-4028-b9f3-019c311d40d4)
+
+### 🔹 Real-time Text Editing  
+![Image](https://github.com/user-attachments/assets/deef1ea8-d03d-48df-99fa-a381af2f0858)
+
+### 🔹 Exit & Save Prompt  
+![Image](https://github.com/user-attachments/assets/b517c744-2377-4c92-a20d-d5056eef87f9)
+
+---
+
+# ⚠️ Limitations – Console-Based File Editor
+
+This document outlines the known limitations and constraints of the console-based file editor developed using C++ for Windows.
+
+---
+
+## ❌ No Mouse Support
+- Only keyboard input is supported.
+- Mouse interactions such as clicking or selecting text are not available.
+
+## 📄 Line-Based Navigation Only
+- Editor operates on a line-by-line basis.
+- There is no scrolling or paging through content beyond console window size.
+
+## 🧠 No Undo/Redo Functionality
+- Once edits are made, they cannot be reverted.
+- No history tracking of user changes.
+
+## 📂 Single File Only
+- Only one file can be opened and edited at a time.
+- No multi-tab or multi-document support.
+
+## ⛔ ASCII Only
+- Only standard ASCII printable characters (32–126) are reliably supported.
+- Unicode and UTF-8 multibyte characters may not render or save properly.
+
+## 🗃️ Full File in Memory
+- Entire file content is loaded into RAM.
+- May struggle with very large files depending on system memory.
+
+## 🖍️ No Syntax Highlighting
+- Text appears as plain monochrome characters.
+- No visual distinction for programming syntax.
+
+## 📋 No Clipboard Integration
+- Copy/Cut/Paste operations are not supported.
+- Users must type all input manually.
+
+## 🪟 Windows-Only
+- Depends on `windows.h` and `conio.h`.
+- Not compatible with Linux/macOS without rewriting.
+
+## 🔐 No File Locking
+- Does not detect or prevent concurrent edits from other applications.
+- May lead to data loss if a file is edited in multiple places simultaneously.
+
+## ⚠️ Minimal Error Handling
+- Crashes or undefined behavior may occur for corrupted files or invalid inputs.
+- Lacks robust exception handling or input validation.
+
+## 🧾 No Line Wrapping
+- Long lines extend beyond console width without wrapping.
+- Requires horizontal navigation to view full line content.
+
+---
+
+## 💡 Suggestions for Future Improvements
+- Add undo/redo system with history stack.
+- Implement clipboard support and copy/paste shortcuts.
+- Improve Unicode handling and cross-platform compatibility.
+- Add syntax highlighting for common file types.
+- Introduce file-size optimizations for large files.
+
+---
+
+
+
+
+## 📝 Future Improvements
+
+- Add GUI support using Qt or Dear ImGui.
+- Add encryption support for secure `.huff` files.
+- Add decompression support for external Huffman files.
+- Cross-platform support for Linux/macOS.
+
+
+
+## 🙌 Credits
+
+Built by Devesh Dolas for educational and practical demonstration of FileHandling in C++.
+
+---
+
+## 💬 Contact
+
+For suggestions, bugs, or collaboration:  
+**Email:** deveshdolas9@gmail.com 
