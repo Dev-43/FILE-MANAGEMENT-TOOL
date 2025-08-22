@@ -8,12 +8,12 @@ class file_editor;
 
 class deletefile{
     friend class file_editor;
-
-    inline void delete_file(const string& filename);
+    public:
+    inline void remove_file(const string& filename);
         
 };
 
-void deletefile::delete_file(const string& filename) {
+void deletefile::remove_file(const string& filename) {
     char confirm;
         cout << "Are you sure you want to delete '" << filename << "'? (y/n): ";
         cin >> confirm;
